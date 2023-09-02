@@ -9,7 +9,7 @@ function Welcome () {
  return (
     
     <div className="welcome" >
-        Welcome to the page...{name}
+        Welcome to the page... {name}
     </div>
  )
 }
