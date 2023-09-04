@@ -8,8 +8,8 @@ function Welcome () {
     )
  return (
     
-    <div className="welcome" >
-        Welcome to the page... {name}
+    <div className="welcome">
+        Welcome to the page {name}
     </div>
  )
 }
