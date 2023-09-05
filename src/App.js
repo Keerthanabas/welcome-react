@@ -1,21 +1,46 @@
 //import logo from './logo.svg';
 import './App.css';
 import Welcome from './welcome';
-function App() {
- let b = "keerthana"
+import Newentry from './newentry';
+import Percentage from './percentage';
+
+// function App() {
+//  let numbers = "4227"
+//   return (
+//     <div>
+//     <div className="App">
+//       <h1>
+//         React
+//       </h1>
+      
+//       <p>
+//         welcome to the site 
+//       </p>
+//       <Newentry />
+//     </div>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// const App = () => {
+
+//   return (
+//     <>
+//     <calendar/>
+//     </>
+//   );
+// };
+
+// export default calendar;
+
+const App = () => {
   return (
-    <div>
-    <div className="App">
-      <h1>
-        React
-      </h1>
-      <Welcome />
-      <p>
-        hai this is {b}
-      </p>
-    </div>
-    </div>
+    <>
+      <Percentage />
+    </>
   );
-}
+};
 
 export default App;
