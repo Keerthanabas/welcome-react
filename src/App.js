@@ -3,6 +3,9 @@ import './App.css';
 import Welcome from './welcome';
 import Newentry from './newentry';
 import Percentage from './percentage';
+import ClassName from './Classname';
+import PersonNum from './personclassref.js';
+import ClickButton from './class.js'
 
 // function App() {
 //  let numbers = "4227"
@@ -38,7 +41,7 @@ import Percentage from './percentage';
 const App = () => {
   return (
     <>
-      <Percentage />
+      <PersonNum />
     </>
   );
 };
