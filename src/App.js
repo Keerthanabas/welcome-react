@@ -4,8 +4,10 @@ import Welcome from './welcome';
 import Newentry from './newentry';
 import Percentage from './percentage';
 import ClassName from './Classname';
-import PersonNum from './personclassref.js';
+//import PersonNum from './personclassref';
 import ClickButton from './class.js'
+import ParentClass from './parentclass';
+import ChildClass from './childclass'
 
 // function App() {
 //  let numbers = "4227"
@@ -41,7 +43,7 @@ import ClickButton from './class.js'
 const App = () => {
   return (
     <>
-      <PersonNum />
+      <ParentClass />
     </>
   );
 };
