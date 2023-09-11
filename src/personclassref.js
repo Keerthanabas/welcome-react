@@ -8,7 +8,7 @@ class PersonNum extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-          persons : person,num
+          persons : "keerthana",num : "1"
         };
     }
       render(){
@@ -21,11 +21,11 @@ class PersonNum extends React.Component {
             This is the persons name list
 
             <div>
-           PersonNum {this.state.persons}
+           PersonNum {this.state.persons} {this.state.num}
            </div>
            <div>
-            <button onClick = {()=>this.setState({person :this.state.persons })}>person </button>
-            <button onClick = {()=>this.setState({num :this.state.num })}>num</button>
+            <button onClick = {()=>this.setState({persons :person[Math.floor(Math.random() * person.length)],num :num[Math.floor(Math.random() * num.length)] })}>person </button>
+            <button onClick = {()=>this.setState({num :num[Math.floor(Math.random() * num.length)],persons :person[Math.floor(Math.random() * person.length)]  })}>num</button>
            </div>
             </p>
             </div>

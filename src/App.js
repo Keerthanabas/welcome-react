@@ -1,13 +1,16 @@
 //import logo from './logo.svg';
 import './App.css';
-import Welcome from './welcome';
-import Newentry from './newentry';
-import Percentage from './percentage';
-import ClassName from './Classname';
-//import PersonNum from './personclassref';
-import ClickButton from './class.js'
-import ParentClass from './parentclass';
-import ChildClass from './childclass'
+// import Welcome from './welcome';
+// import Newentry from './newentry';
+// import Percentage from './percentage';
+// import ClassName from './Classname';
+// import PersonNum from './personclassref';
+// import ClickButton from './class.js'
+// import ParentClass from './parentclass';
+// import ChildClass from './childclass'
+import Swiggy from './swiggy';
+import Menu from './menu';
+import Contact from './contact';
 
 // function App() {
 //  let numbers = "4227"
@@ -43,7 +46,9 @@ import ChildClass from './childclass'
 const App = () => {
   return (
     <>
-      <ParentClass />
+      <Swiggy />
+      <Menu />
+      <Contact />
     </>
   );
 };

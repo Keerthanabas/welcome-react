@@ -5,7 +5,7 @@ class ParentClass extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      amount: 5
+      amount: 6
     };
   }
   render() {
