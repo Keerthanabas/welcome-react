@@ -8,9 +8,12 @@ import './App.css';
 // import ClickButton from './class.js'
 // import ParentClass from './parentclass';
 // import ChildClass from './childclass'
-import Swiggy from './swiggy';
-import Menu from './menu';
-import Contact from './contact';
+// import Swiggy from './swiggy';
+// import Menu from './menu';
+// import Contact from './contact';
+import Login from './login';
+import "./login.css";
+
 
 // function App() {
 //  let numbers = "4227"
@@ -46,9 +49,7 @@ import Contact from './contact';
 const App = () => {
   return (
     <>
-      <Swiggy />
-      <Menu />
-      <Contact />
+      <Login />
     </>
   );
 };
