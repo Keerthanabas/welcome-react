@@ -11,8 +11,9 @@ import './App.css';
 // import Swiggy from './swiggy';
 // import Menu from './menu';
 // import Contact from './contact';
-import Login from './login';
-import "./login.css";
+// import Login from './login';
+// import "./login.css";
+import Parent from "./parent";
 
 
 // function App() {
@@ -49,7 +50,7 @@ import "./login.css";
 const App = () => {
   return (
     <>
-      <Login />
+      <Parent />
     </>
   );
 };

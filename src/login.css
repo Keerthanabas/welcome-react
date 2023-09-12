@@ -1,26 +1,35 @@
+html{
+    
+        background-color: rgb(234, 159, 222);
+    }
 
 
 .styles{
-    top: 50%;
-    left:50%;
-    position:absolute ;
+    left: 50%;
+    margin-top: 287px;
+    text-align: center;
+    position: absolute;
     transform: translate(-50%,-50%);
-    padding: 60px 40px 50px 40px;
+    padding: 10px 40px 50px 40px;
     background: palevioletred;
     border-radius: 10px;
 }
 #name{
-    width:200px;
-    border:pink;
-    padding:6px;
-    margin-bottom: 15px;
-    color: black;
+    width: 200px;
+    border: rgb(15, 16, 16);
+    padding: 7px;
+    margin-bottom: 16px;
+    color: rgb(26, 23, 23);
+    border-style: solid;
+    border-radius: 5px;
 }
 #button{
     border: 100px;
-    padding: 10px 50px;
+    padding: 9px 50px;
     background-color: blueviolet;
     color: white;
     margin-top: 20px;
+    font-size: 1em;
+    cursor: pointer;
     
 }

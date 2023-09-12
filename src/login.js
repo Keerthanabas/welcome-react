@@ -4,22 +4,20 @@ import "./login.css";
 
 const Login = () => {
     return (
-        <div className = "login">
         
-        <body>
+        <div className = "App">
             
         <div className = "styles">
 
-        <h2>Member Login</h2>
+        <h3>Member Login</h3>
 
         <input type = "text" placeholder="User Name" id = "name"/><br></br>
         <input type = "password" placeholder="Password" id = "name"/><br></br>
         <input type = "submit" value = "Submit" id = "button"/>
 
+        </div>
+        </div>
         
-        </div>
-        </body>
-        </div>
         
         ) ;
     };
