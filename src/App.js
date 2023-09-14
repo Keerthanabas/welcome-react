@@ -11,9 +11,10 @@ import './App.css';
 // import Swiggy from './swiggy';
 // import Menu from './menu';
 // import Contact from './contact';
-// import Login from './login';
-// import "./login.css";
-import Parent from "./parent";
+//import Login from './login';
+//import "./login.css";
+//import Parent from "./parent";
+import LoginPage from "./loginc"
 
 
 // function App() {
@@ -50,7 +51,7 @@ import Parent from "./parent";
 const App = () => {
   return (
     <>
-      <Parent />
+      <LoginPage />
     </>
   );
 };
