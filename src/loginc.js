@@ -38,7 +38,7 @@ class LoginPage extends React.Component {
           type="text"
           placeholder="User Name"
           id="name"
-          value={this.state.username}
+          value={this.state.username} autocomplete="off"
           onChange={(e) => {
             console.log(e);
             this.setState({
