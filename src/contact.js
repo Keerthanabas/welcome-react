@@ -1,6 +1,6 @@
 import React from 'react'
 import './swiggy'
-import "./styles.css";
+
 
 const Contact = () => {
     return (

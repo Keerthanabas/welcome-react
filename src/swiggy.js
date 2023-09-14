@@ -1,14 +1,17 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom';
 import "./swiggy.css"
 import './App.css';
-import "./menu";
-import "./contact";
-import "./styles.css";
+import "./Routermenu";
+import "./Routercontact";
+
+
 
 const Swiggy = () => {
+    const navigate = useNavigate();
+    
     return (
-        
-        
+       
         <div className = "App" >
             
         <h1><b>Sai Hotel</b></h1>
@@ -18,15 +21,18 @@ const Swiggy = () => {
         <p>
             <u>If you Want to order please click order button</u>
           <br></br>
-          <div className = "styles">  
-        <a href = "https://www.swiggy.com/"target="_blank"rel="noreferrer">order</a> <br></br>
-        <a href = "menu.js">Menu</a> <br></br>
-        <a href = "contact.js">Contact</a>
+        <div>  
+           
+        {/* <a href = "https://www.swiggy.com/"target="_blank"rel="noreferrer">order</a> <br></br> */}
+        {/* <a href = "menu.js">Menu</a> <br></br>
+        <a href = "contact.js">Contact</a> */}
+        <div>
+        <b><button onClick={() => {navigate("/menu")}}>Menu</button></b>
+        <button onClick={() => {navigate("/contact")}}>Contact</button>
+        </div>
         </div>
         </p>
         </div>
-        
-        
     )
 
 }
