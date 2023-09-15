@@ -8,7 +8,7 @@ import './App.css';
 // import ClickButton from './class.js'
 // import ParentClass from './parentclass';
 // import ChildClass from './childclass'
- import Swiggy from './swiggy';
+ //import Swiggy from './swiggy';
 // import Menu from './menu';
 // import Contact from './contact';
 //import Login from './login';
@@ -16,8 +16,16 @@ import './App.css';
 //import Parent from "./parent";
 //import LoginPage from "./loginc";
 import { Routes, Route, useNavigate } from "react-router-dom";
-import RouterMenu from "./Routermenu"
-import RouterContact from "./Routercontact"
+//import RouterMenu from "./Routermenu"
+//import RouterContact from "./Routercontact"
+import Header from "./Header";
+import Footer from "./Footer"
+import HOC from "./hoccomponent";
+import Home from './home';
+import About from './abouth';
+import Skill from './skills';
+import Contact from './contacth';
+import "./portfoli.css";
 
 
 // function App() {
@@ -51,17 +59,36 @@ import RouterContact from "./Routercontact"
 
 // export default calendar;
 
+// const App = () => {
+//   const { navigate } = useNavigate();
+//   return (
+//     <div>
+//        <Routes>
+//         <Route exact path = "/" element = {<Swiggy/>}/>
+//         <Route exact path = "/menu" element = {<RouterMenu/>}/>
+//         <Route exact path = "/contact" element = {<RouterContact/>}/>
+//       </Routes>
+//     </div>
+//   );
+// };
+
+// export default App;
+
 const App = () => {
-  const { navigate } = useNavigate();
+  const {navigate} = useNavigate();
   return (
     <div>
-       <Routes>
-        <Route exact path = "/" element = {<Swiggy/>}/>
-        <Route exact path = "/menu" element = {<RouterMenu/>}/>
-        <Route exact path = "/contact" element = {<RouterContact/>}/>
-      </Routes>
-    </div>
-  );
-};
+      
+        <Routes>
+        
+        <Route exact path = "/" element = {<HOC childElement={<HOC/>}/>}/>
+        <Route exact path = "/home" element = {<HOC childElement = {<Home/>}/>}/>
+        <Route exact path = "/abouth" element = {<HOC childElement = {<About/>}/>}/>
+        <Route exact path = "/skills" element = {<HOC childElement = {<Skill/>}/>}/>
+        <Route exact path = "/contacth" element = {<HOC childElement = {<Contact/>}/>}/>
+        </Routes>
 
+  </div>
+  )
+}
 export default App;

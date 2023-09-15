@@ -1,0 +1,27 @@
+
+button {
+    padding-block: 3px;
+    margin: 1em;
+    padding-inline: 11px;
+}
+button {
+    padding-block: 3px;
+    margin: 1em;
+    padding-inline: 11px;
+}
+button {
+    padding-block: 3px;
+    margin: 1em;
+    padding-inline: 11px;
+}
+button {
+    padding-block: 3px;
+    margin: 1em;
+    padding-inline: 11px;
+}
+button:hover{
+  background-color: aqua;
+  color: black;
+}
+
+    
