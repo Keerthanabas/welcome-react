@@ -55,7 +55,7 @@ const App = () => {
   const { navigate } = useNavigate();
   return (
     <div>
-      <Routes>
+       <Routes>
         <Route exact path = "/" element = {<Swiggy/>}/>
         <Route exact path = "/menu" element = {<RouterMenu/>}/>
         <Route exact path = "/contact" element = {<RouterContact/>}/>
