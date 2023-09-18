@@ -8,8 +8,7 @@ const HOC = (props) => {
     return (
       <div>
         <Header/>
-        <div> {childElement} </div> <br></br>
-        <br></br>
+        <div> {childElement} </div> 
         <br></br>
         <br></br>
         <br></br>
@@ -23,3 +22,5 @@ const HOC = (props) => {
   };
   
   export default HOC;
+
+  

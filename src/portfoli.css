@@ -3,25 +3,45 @@ button {
     padding-block: 3px;
     margin: 1em;
     padding-inline: 11px;
+    background-color: rgb(215, 193, 63);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
-button {
-    padding-block: 3px;
-    margin: 1em;
-    padding-inline: 11px;
-}
-button {
-    padding-block: 3px;
-    margin: 1em;
-    padding-inline: 11px;
-}
-button {
-    padding-block: 3px;
-    margin: 1em;
-    padding-inline: 11px;
-}
+
 button:hover{
   background-color: aqua;
   color: black;
 }
+div.Header{
+    background-color: darkslategray;
 
-    
+}
+div.Footer{
+    background-color: darkslategray;
+}
+
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkcyan;
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(3, 74, 50);
+}
+address{
+    color: rgb(112, 41, 41);
+}
+table{
+color: darkolivegreen;
+}
+P{
+    color: darkslategray;
+}
+li{
+    color: darkblue;
+}
+
+
+
+

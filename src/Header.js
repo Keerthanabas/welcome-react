@@ -12,22 +12,27 @@ const Header = () => {
     const navigate = useNavigate();
 
     return (
-        <>
+        
+        <div className = "Header">
+          
+          
         <img src ={Keerthana} width = "100 "alt = "K" />
-
+  
         <div>
            
             <div className = "Portfoli">
-        <center>
+            <center > 
             <button onClick = {()=>{navigate("/home")}}>Home</button>
             <button onClick = {()=>{navigate("/abouth")}}>About</button>
             <button onClick = {()=>{navigate("/skills")}}>Skills</button>
             <button onClick = {()=>{navigate("/contacth")}}>Contact</button>
-        </center>
-            
+        
+            </center>
         </div>
         </div>
-        </>
+        
+        
+        </div>
 
    );
 

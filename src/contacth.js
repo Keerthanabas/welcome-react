@@ -4,7 +4,7 @@ import React from "react";
 const Contact = () => {
     return (
         
-        <div>
+        <div className = "Contact">
             <h1>Contact Me</h1>
             <h2>If you have any queries please reach out me via Below details</h2>
 
@@ -27,7 +27,7 @@ const Contact = () => {
                 </tr>
                 <tr>
                <td> Message :</td>
-               <td> <textarea type ="message" placeholder="Message" name = "message" rows="3"></textarea></td> <br></br>
+               <td> <textarea type ="message" placeholder="message" name = "message" rows="3"></textarea></td> <br></br>
                 </tr>
                 <button type = "submit" >Submit</button>
             </table>

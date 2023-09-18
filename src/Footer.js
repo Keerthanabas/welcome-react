@@ -14,10 +14,11 @@ const Footer = () => {
     const navigate = useNavigate();
 
     return(
-        <div>
+        <div className = "Footer">
             <center>
+                
             <img src ={Keerthana} width = "200 "alt = "K"/><br></br>
-        
+            
     <div className = "portfoli">
         
         <button onClick = {()=>{navigate("/home")}}>Home</button>
