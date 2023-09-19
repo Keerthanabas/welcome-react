@@ -1,11 +1,14 @@
 import React from "react";
-//import portf from "./portf.jpeg";
+import port from "./port.jpeg";
 
 
 const Home = () => {
     return (
         <div>
-         {/* <img src ={portf} width = "100 "alt = "P" /> */}
+            <center>
+         <img src ={port} width = "500 " height= "200" alt = "P" /> 
+         
+         </center>
          <center>
          <h2>Welcome</h2>
          <h3>My Portfolio</h3>
