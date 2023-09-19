@@ -7,7 +7,7 @@ const ListTitle = () =>{
         .get ("https://jsonplaceholder.typicode.com/todos")
         .then ((res)=>{ 
             console.log(res, "res");
-            console.log(res.data.product,"Title");
+            console.log(res.data,"Title");
         })
         .catch((err)=>{
             console.log((err,"error"));

@@ -13,11 +13,11 @@ button:hover{
   color: black;
 }
 div.Header{
-    background-color: darkslategray;
+    background-color: white;
 
 }
 div.Footer{
-    background-color: darkslategray;
+    background-color: floralwhite;
 }
 
 
@@ -36,11 +36,16 @@ table{
 color: darkolivegreen;
 }
 P{
-    color: darkslategray;
+    color: rgb(8, 14, 14);
 }
 li{
     color: darkblue;
 }
+html{
+    background-color: pink
+}
+
+
 
 
 
