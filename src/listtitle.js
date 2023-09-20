@@ -22,7 +22,7 @@ const ListId = () => {
          <tr>
            <th>ID</th> 
            <th>Title</th>
-           <th>UserID</th>
+           <th>completed status</th>
          </tr>
          </thead>
          <tbody>
@@ -32,7 +32,7 @@ const ListId = () => {
                     <tr>
                         <td>{item.id}</td>
                         <td>{item.title}</td>
-                        <td>{item.userId}</td>
+                        <td>{item.completed ? "TRUE": "FALSE"}</td>
                     </tr>
                 )
               })}
