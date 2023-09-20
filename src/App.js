@@ -26,8 +26,9 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 // import Skill from './skills';
 // import Contact from './contacth';
 // import "./portfoli.css";
-import ListId from "./listtitle";
-import ListTitle from "./listproduct";
+// import ListId from "./listget";
+// import ListTitle from "./listproduct";
+import ListPost from "./listpost";
 
 
 // function App() {
@@ -54,7 +55,7 @@ const App = () => {
 
   return (
     <>
-    <ListId/>
+    <ListPost/>
     </>
   );
 };
