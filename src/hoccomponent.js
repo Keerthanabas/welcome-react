@@ -22,10 +22,7 @@ const HOC = (props) => {
         <br></br>
         <br></br>
         <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+        
         <Footer/>
       </div>
     );
