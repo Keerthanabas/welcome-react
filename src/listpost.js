@@ -12,9 +12,9 @@ const onLogin = () =>{
     axios
     .post("https://dummyjson.com/users/add",
     {
-        firstName : 'Muhammad',
-        lastName : 'Ovi',
-        age : '250'
+        firstName : firstname,
+        lastName : lastname,
+        age : age
     }
     )
     .then ((res)=> {
