@@ -20,15 +20,15 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 //import RouterContact from "./Routercontact"
 // import Header from "./Header";
 // import Footer from "./Footer"
-import HOC from "./hoccomponent";
-import Home from './home';
-import About from './abouth';
-import Skill from './skills';
-import Contact from './contacth';
-import "./portfoli.css";
+// import HOC from "./hoccomponent";
+// import Home from './home';
+// import About from './abouth';
+// import Skill from './skills';
+// import Contact from './contacth';
+// import "./portfoli.css";
 // import ListId from "./listget";
 // import ListTitle from "./listproduct";
-// import ListPost from "./listpost";
+ import ListPost from "./listpost";
 
 
 // function App() {
@@ -51,16 +51,16 @@ import "./portfoli.css";
 
 // export default App;
 
-// const App = () => {
+const App = () => {
 
-//   return (
-//     <>
-//     <ListPost/>
-//     </>
-//   );
-// };
+  return (
+    <>
+    <ListPost/>
+    </>
+  );
+};
 
-// export default App;
+export default App;
 
 // const App = () => {
 //   const { navigate } = useNavigate();
@@ -77,22 +77,22 @@ import "./portfoli.css";
 
 // export default App;
 
- const App = () => {
-  const {navigate} = useNavigate();
-  return (
-    <div>
+//  const App = () => {
+//   const {navigate} = useNavigate();
+//   return (
+//     <div>
       
-        <Routes>
-        <Route exact path = "/" element = {<HOC childElement= {<> </>}/>}/>
-        {/* <Route exact path ="/Header" element = {<HOC childElement={<Header/>}/>}/>
-        <Route exact path ="/Footer" element = {<HOC childElement={<Footer/>}/>}/> */}
-        <Route exact path = "/home" element = {<HOC childElement = {<Home/>}/>}/>
-        <Route exact path = "/abouth" element = {<HOC childElement = {<About/>}/>}/>
-        <Route exact path = "/skills" element = {<HOC childElement = {<Skill/>}/>}/>
-        <Route exact path = "/contacth" element = {<HOC childElement = {<Contact/>}/>}/>
-        </Routes>
+//         <Routes>
+//         <Route exact path = "/" element = {<HOC childElement= {<> </>}/>}/>
+//         {/* <Route exact path ="/Header" element = {<HOC childElement={<Header/>}/>}/>
+//         <Route exact path ="/Footer" element = {<HOC childElement={<Footer/>}/>}/> */}
+//         <Route exact path = "/home" element = {<HOC childElement = {<Home/>}/>}/>
+//         <Route exact path = "/abouth" element = {<HOC childElement = {<About/>}/>}/>
+//         <Route exact path = "/skills" element = {<HOC childElement = {<Skill/>}/>}/>
+//         <Route exact path = "/contacth" element = {<HOC childElement = {<Contact/>}/>}/>
+//         </Routes>
 
-  </div>
-  )
-}
-export default App;
+//   </div>
+//   )
+// }
+// export default App;
