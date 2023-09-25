@@ -28,7 +28,10 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 // import "./portfoli.css";
 // import ListId from "./listget";
 // import ListTitle from "./listproduct";
- import ListPost from "./listpost";
+ //import ListPost from "./listpost";
+ import API from "./testapi"
+ import Create from "./Create"
+ import Update from "./update"
 
 
 // function App() {
@@ -52,18 +55,24 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 // export default App;
 
 const App = () => {
+  const { navigate } = useNavigate();
 
   return (
-    <>
-    <ListPost/>
-    </>
+    
+    <div>
+       <Routes>
+        <Route exact path = "/" element = {<API/>}/>
+         <Route exact path = "/create" element = {<Create/>}/>
+         <Route exact path = "/update" element = {<Update/>}/>
+        </Routes>
+    </div>
   );
 };
 
 export default App;
 
-// const App = () => {
-//   const { navigate } = useNavigate();
+ {/* const App = () => { */}
+{/* //   const { navigate } = useNavigate();
 //   return (
 //     <div>
 //        <Routes>
@@ -73,12 +82,12 @@ export default App;
 //       </Routes>
 //     </div>
 //   );
-// };
+// }; */}
 
-// export default App;
+{/* // export default App;
 
-//  const App = () => {
-//   const {navigate} = useNavigate();
+//  const App = () => { */}
+{/* //   const {navigate} = useNavigate();
 //   return (
 //     <div>
       
@@ -95,4 +104,4 @@ export default App;
 //   </div>
 //   )
 // }
-// export default App;
+// export default App; */}
