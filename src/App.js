@@ -15,7 +15,7 @@ import './App.css';
 //import "./login.css";
 //import Parent from "./parent";
 //import LoginPage from "./loginc";
-import { Routes, Route, useNavigate } from "react-router-dom";
+//import { Routes, Route, useNavigate } from "react-router-dom";
 //import RouterMenu from "./Routermenu"
 //import RouterContact from "./Routercontact"
 // import Header from "./Header";
@@ -26,12 +26,13 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 // import Skill from './skills';
 // import Contact from './contacth';
 // import "./portfoli.css";
+ import Todo from './Todo';
 // import ListId from "./listget";
 // import ListTitle from "./listproduct";
  //import ListPost from "./listpost";
- import API from "./testapi"
- import Create from "./Create"
- import Update from "./update"
+//  import API from "./testapi"
+//  import Create from "./Create"
+//  import Update from "./update"
 
 
 // function App() {
@@ -54,22 +55,22 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 
 // export default App;
 
-const App = () => {
-  const { navigate } = useNavigate();
+// const App = () => {
+//   const { navigate } = useNavigate();
 
-  return (
+//   return (
     
-    <div>
-       <Routes>
-        <Route exact path = "/" element = {<API/>}/>
-         <Route exact path = "/create" element = {<Create/>}/>
-         <Route exact path = "/update" element = {<Update/>}/>
-        </Routes>
-    </div>
-  );
-};
+//     <div>
+//        <Routes>
+//         <Route exact path = "/" element = {<API/>}/>
+//          <Route exact path = "/create" element = {<Create/>}/>
+//          <Route exact path = "/update" element = {<Update/>}/>
+//         </Routes>
+//     </div>
+//   );
+// };
 
-export default App;
+// export default App;
 
  {/* const App = () => { */}
 {/* //   const { navigate } = useNavigate();
@@ -84,17 +85,17 @@ export default App;
 //   );
 // }; */}
 
-{/* // export default App;
+// export default App;
 
-//  const App = () => { */}
-{/* //   const {navigate} = useNavigate();
+//   const App = () => {
+//   const {navigate} = useNavigate();
 //   return (
 //     <div>
       
 //         <Routes>
 //         <Route exact path = "/" element = {<HOC childElement= {<> </>}/>}/>
 //         {/* <Route exact path ="/Header" element = {<HOC childElement={<Header/>}/>}/>
-//         <Route exact path ="/Footer" element = {<HOC childElement={<Footer/>}/>}/> */}
+//         <Route exact path ="/Footer" element = {<HOC childElement={<Footer/>}/>}/>  */}
 //         <Route exact path = "/home" element = {<HOC childElement = {<Home/>}/>}/>
 //         <Route exact path = "/abouth" element = {<HOC childElement = {<About/>}/>}/>
 //         <Route exact path = "/skills" element = {<HOC childElement = {<Skill/>}/>}/>
@@ -104,4 +105,14 @@ export default App;
 //   </div>
 //   )
 // }
-// export default App; */}
+// export default App;
+
+const App = () => {
+  return (
+    <>
+      <Todo />
+    </>
+  );
+};
+
+export default App;
