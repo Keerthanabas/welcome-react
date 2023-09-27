@@ -15,7 +15,7 @@ import './App.css';
 //import "./login.css";
 //import Parent from "./parent";
 //import LoginPage from "./loginc";
-//import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 //import RouterMenu from "./Routermenu"
 //import RouterContact from "./Routercontact"
 // import Header from "./Header";
@@ -26,13 +26,15 @@ import './App.css';
 // import Skill from './skills';
 // import Contact from './contacth';
 // import "./portfoli.css";
- import Todo from './Todo';
+// import Todo from './Todo';
 // import ListId from "./listget";
 // import ListTitle from "./listproduct";
  //import ListPost from "./listpost";
-//  import API from "./testapi"
-//  import Create from "./Create"
-//  import Update from "./update"
+// import API from "./crudhome"
+//   import Create from "./Create"
+//   import Update from "./update"
+//import Crud from './crudhome';
+// import CreateWorkers from './Create';
 
 
 // function App() {
@@ -107,12 +109,12 @@ import './App.css';
 // }
 // export default App;
 
-const App = () => {
-  return (
-    <>
-      <Todo />
-    </>
-  );
-};
+// const App = () => {
+//   return (
+//     <>
+//       < API />
+//     </>
+//   );
+// };
 
-export default App;
+// export default App;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {useNavigate} from 'react-router-dom';
-import './Create';
-import './update';
+// import './Create';
+// import './update';
 
 
 const API = () => {

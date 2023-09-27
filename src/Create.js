@@ -1,47 +1,48 @@
-import React , {useState}from "react";
-import axios from "axios"; 
-import {useNavigate} from 'react-router-dom';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+//import { data } from "./data";
 
-const Create = () =>{
-    const navigate = useNavigate();
-    const [employeeName, setempName] = useState("");
-    const [empRole , setempRole] = useState("");
-    const [doj, setdoj] = useState("");
-    const[ message, setMessage] = useState("");
-    
-   const onLogin = () => {
-    
-        axios
-        .post ('data')
-        .then ((res) =>{
-            setMessage("create successfully");
+const CreateWorkers = ({createEmp,empData}) => {
+    const [empName,setempName] =useState("")
+    const [empRole, setempRole] = useState("")
+    const [empDoj, setempDoj] = useState("")
+    const [message,setMessage]= useState("")
+    const navigate = {useNavigate}
+    const createWorkers = ()=> {
+        if(empName && empRole && empDoj) {
+            const data = {
+                employeeName: empName,
+                empId: empData.length + 1,
+                empRole: empRole,
+                doj: empDoj
+            };
+            createEmp(data);
             navigate("/")
-        })
-        .catch ((err) =>{
-            console.log(err, "error");
-            setMessage("Please enter enter the details");
-        });
-      };
-       
-return (
-<>    
-<center>
-        EmployeeName :
-        <input type = "text" value = {employeeName} placeholder="EmpName" onChange={(e) =>setempName(e.target.value)}/> <br></br>
-        EmpRole :
-        <input type = "text" value = {empRole} placeholder="EmpRole" onChange={(e) =>setempRole(e.target.value)}/><br></br>
-        EmpDOJ :
-        <input type = "text" value = {doj} placeholder="DOJ" onChange={(e) =>setdoj(e.target.value)}/>
-        <br></br>
-<div>
-<button type ="submit" onClick={()=>onLogin()}>Submit</button>
-</div>
-{message && <span style={{ color: "red" }}>{message} </span>}
-</center>
+        }else {
+        setMessage("Please enter the details");
+    }
+    }
     
-</>
-    );
-
-};
-
-export default Create;
+    return(
+<div>
+    <form>
+<table>
+    <tr>
+        <td>EmployeeName</td> <td><input type = "text" value ={empName} placeholder="EmployeeName" onChange={(e)=>setempName(e.target.value)}></input></td>
+    </tr>
+    <tr>
+        <td>Role</td> <td><input type ="text" value = {empRole} placeholder="Role" onChange={(e)=>setempRole(e.target.value)}></input></td>
+    </tr>
+    <tr>
+        <td>DOJ</td> <td><input type ="text" value = {empDoj} placeholder="DOJ" onChange={(e)=>setempDoj(e.target.value)}></input></td>
+    </tr>
+    <tr>
+        <td><button type="submit" onClick={()=>createWorkers()}>Submit</button></td>
+    </tr>
+    {message && <span style ={{color: "red"}}>{message}</span>}
+</table>
+</form>
+</div>
+)
+}
+export default CreateWorkers;
