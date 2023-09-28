@@ -1,23 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
-// import Welcome from './welcome';
-// import Newentry from './newentry';
-// import Percentage from './percentage';
-// import ClassName from './Classname';
-// import PersonNum from './personclassref';
-// import ClickButton from './class.js'
-// import ParentClass from './parentclass';
-// import ChildClass from './childclass'
- //import Swiggy from './swiggy';
-// import Menu from './menu';
-// import Contact from './contact';
-//import Login from './login';
-//import "./login.css";
-//import Parent from "./parent";
-//import LoginPage from "./loginc";
 import { Routes, Route, useNavigate } from "react-router-dom";
-//import RouterMenu from "./Routermenu"
-//import RouterContact from "./Routercontact"
+
 // import Header from "./Header";
 // import Footer from "./Footer"
 // import HOC from "./hoccomponent";
@@ -27,14 +11,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 // import Contact from './contacth';
 // import "./portfoli.css";
 // import Todo from './Todo';
-// import ListId from "./listget";
-// import ListTitle from "./listproduct";
- //import ListPost from "./listpost";
-// import API from "./crudhome"
-//   import Create from "./Create"
-//   import Update from "./update"
-//import Crud from './crudhome';
-// import CreateWorkers from './Create';
+
 
 
 // function App() {
@@ -112,7 +89,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 // const App = () => {
 //   return (
 //     <>
-//       < API />
+//       < Todo />
 //     </>
 //   );
 // };
